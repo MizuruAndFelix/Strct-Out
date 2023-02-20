@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <locale.h>
+#include <windows.h>
 using namespace std;
 
 struct Adress 
@@ -44,6 +45,8 @@ void fill(Adress *A)
 int main()
 {
     setlocale(LC_ALL, "");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
 
     Adress Москва;
     Adress Ижевск;
